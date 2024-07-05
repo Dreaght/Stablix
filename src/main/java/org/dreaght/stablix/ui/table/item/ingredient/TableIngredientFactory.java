@@ -1,8 +1,10 @@
-package org.dreaght.stablix.ui.table.item;
+package org.dreaght.stablix.ui.table.item.ingredient;
 
 import org.dreaght.stablix.business.table.Ingredient;
+import org.dreaght.stablix.ui.table.item.TableItem;
+import org.dreaght.stablix.ui.table.item.TableItemCreator;
 
-record TableIngredientFactory(Ingredient ingredient) implements TableItemCreator {
+public record TableIngredientFactory(Ingredient ingredient) implements TableItemCreator {
 
     @Override
     public TableItem createItem() {

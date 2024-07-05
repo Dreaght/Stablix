@@ -1,9 +1,10 @@
-package org.dreaght.stablix.ui.table.item;
+package org.dreaght.stablix.ui.table.item.block;
 
-import lombok.Getter;
 import org.dreaght.stablix.business.table.TableBlockType;
+import org.dreaght.stablix.ui.table.item.TableItem;
+import org.dreaght.stablix.ui.table.item.TableItemCreator;
 
-record TableBlockItemFactory(TableBlockType blockType) implements TableItemCreator {
+public record TableBlockItemFactory(TableBlockType blockType) implements TableItemCreator {
 
     @Override
     public TableItem createItem() {

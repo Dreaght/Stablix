@@ -2,6 +2,8 @@ package org.dreaght.stablix.ui.table.item;
 
 import org.dreaght.stablix.business.table.Ingredient;
 import org.dreaght.stablix.business.table.TableBlockType;
+import org.dreaght.stablix.ui.table.item.block.TableBlockItemFactory;
+import org.dreaght.stablix.ui.table.item.ingredient.TableIngredientFactory;
 
 import java.util.Arrays;
 import java.util.Optional;

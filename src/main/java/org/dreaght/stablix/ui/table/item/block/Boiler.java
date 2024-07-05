@@ -1,4 +1,4 @@
-package org.dreaght.stablix.ui.table.item;
+package org.dreaght.stablix.ui.table.item.block;
 
 import org.bukkit.inventory.ItemStack;
 
