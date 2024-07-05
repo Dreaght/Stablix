@@ -1,8 +1,10 @@
-package org.dreaght.stablix.table;
+package org.dreaght.stablix.business.table;
 
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.InventoryHolder;
+import org.dreaght.stablix.ui.table.menu.TableMenu;
 
-public interface MenuHolder extends InventoryHolder {
+interface MenuHolder {
     void openMenu(Player player);
+
+    TableMenu getMenu();
 }

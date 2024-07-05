@@ -1,8 +1,8 @@
-package org.dreaght.stablix.listener;
+package org.dreaght.stablix.business.listener;
 
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockPlaceEvent;
 
-public interface BlockPlaceListener extends Listener {
+interface BlockPlaceListener extends Listener {
     void onBlockPlace(BlockPlaceEvent event);
 }

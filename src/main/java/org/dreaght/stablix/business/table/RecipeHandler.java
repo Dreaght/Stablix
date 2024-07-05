@@ -1,7 +1,7 @@
-package org.dreaght.stablix.table;
+package org.dreaght.stablix.business.table;
 
 import org.bukkit.inventory.Recipe;
 
-public interface RecipeHandler {
+interface RecipeHandler {
     void handleRecipe(Recipe recipe);
 }

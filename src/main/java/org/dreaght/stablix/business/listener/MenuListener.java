@@ -1,8 +1,8 @@
-package org.dreaght.stablix.listener;
+package org.dreaght.stablix.business.listener;
 
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 
-public interface MenuListener extends Listener {
+interface MenuListener extends Listener {
     void onItemClickEvent(InventoryClickEvent event);
 }

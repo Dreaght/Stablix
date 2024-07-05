@@ -1,4 +1,9 @@
 package org.dreaght.stablix.ui.table.item;
 
-public class TableIngredientItem {
+import org.bukkit.inventory.ItemStack;
+
+abstract class TableIngredientItem extends TableItem {
+    public TableIngredientItem(ItemStack itemStack) {
+        super(itemStack);
+    }
 }

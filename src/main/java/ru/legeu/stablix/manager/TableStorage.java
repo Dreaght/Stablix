@@ -1,10 +1,10 @@
-package ru.legeu.stablix.storage;
+package ru.legeu.stablix.manager;
 
-import dev.mega.stablix.business.table.Table;
 import org.bukkit.entity.Player;
+import ru.legeu.stablix.table.Table;
 
 import java.util.HashMap;
 import java.util.List;
 
-public class TableStorage extends HashMap<Player, List<Table>> {
+class TableStorage extends HashMap<Player, List<Table>> {
 }

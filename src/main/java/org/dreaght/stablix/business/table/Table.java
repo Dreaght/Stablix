@@ -1,4 +1,4 @@
-package org.dreaght.stablix.table;
+package org.dreaght.stablix.business.table;
 
 import org.bukkit.Location;
 

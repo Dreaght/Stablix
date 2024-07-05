@@ -1,5 +1,5 @@
 package org.dreaght.stablix.ui.table.item;
 
-public interface TableItemFactory {
+public interface TableItemCreator {
     TableItem createItem();
 }

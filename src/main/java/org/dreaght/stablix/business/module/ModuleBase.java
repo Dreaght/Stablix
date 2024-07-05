@@ -1,7 +1,12 @@
-package org.dreaght.stablix.module;
+package org.dreaght.stablix.business.module;
 
-import org.bukkit.plugin.Plugin;
+interface ModuleBase {
+    void enable();
 
-public interface ModuleBase {
-    void init(Plugin plugin);
+    void disable();
+
+    default void reload() {
+        disable();
+        enable();
+    }
 }

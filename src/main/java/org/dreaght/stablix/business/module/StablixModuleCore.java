@@ -1,11 +1,15 @@
 package org.dreaght.stablix.business.module;
 
 import lombok.AllArgsConstructor;
+
+import java.util.LinkedList;
 import java.util.List;
 
 @AllArgsConstructor
-public class ModuleCore implements ModuleBase {
-    private final List<ModuleBase> modules;
+public class StablixModuleCore implements ModuleCore {
+    private final List<ModuleBase> modules = new LinkedList<>(List.of(
+        //TODO: Initialize them all.
+    ));
 
     @Override
     public void enable() {

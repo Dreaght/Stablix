@@ -1,4 +1,9 @@
 package org.dreaght.stablix.ui.table.item;
 
-public class Boiler {
+import org.bukkit.inventory.ItemStack;
+
+class Boiler extends TableBlockItem {
+    public Boiler(ItemStack itemStack) {
+        super(itemStack);
+    }
 }

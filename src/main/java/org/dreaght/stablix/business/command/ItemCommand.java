@@ -1,7 +1,6 @@
-package org.dreaght.stablix.command;
+package org.dreaght.stablix.business.command;
 
 import org.bukkit.command.CommandExecutor;
 
-public interface ItemCommand extends CommandExecutor {
-    void execute();
+interface ItemCommand extends CommandExecutor {
 }

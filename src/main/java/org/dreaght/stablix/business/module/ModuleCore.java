@@ -1,4 +1,4 @@
 package org.dreaght.stablix.business.module;
 
-public interface ModuleCore {
+public interface ModuleCore extends ModuleBase {
 }

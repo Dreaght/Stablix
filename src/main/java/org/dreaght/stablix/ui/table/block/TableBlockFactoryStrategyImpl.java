@@ -1,4 +1,11 @@
 package org.dreaght.stablix.ui.table.block;
 
-public class TableBlockFactoryStrategyImpl {
+import java.util.Optional;
+
+class TableBlockFactoryStrategyImpl implements TableBlockFactoryStrategy {
+
+    @Override
+    public Optional<TableBlockCreator> getTableBlockCreator(String blockName) {
+        return Optional.empty();
+    }
 }

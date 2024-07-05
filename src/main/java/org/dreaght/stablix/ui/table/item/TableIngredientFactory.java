@@ -1,14 +1,8 @@
 package org.dreaght.stablix.ui.table.item;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
 import org.dreaght.stablix.business.table.Ingredient;
 
-@Getter
-@AllArgsConstructor
-public class TableIngredientFactory implements TableItemFactory {
-
-    private final Ingredient ingredient;
+record TableIngredientFactory(Ingredient ingredient) implements TableItemCreator {
 
     @Override
     public TableItem createItem() {

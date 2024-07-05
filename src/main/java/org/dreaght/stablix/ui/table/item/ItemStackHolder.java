@@ -1,4 +1,7 @@
 package org.dreaght.stablix.ui.table.item;
 
-public interface Item {
+import org.bukkit.inventory.ItemStack;
+
+interface ItemStackHolder {
+    ItemStack getItemStack();
 }

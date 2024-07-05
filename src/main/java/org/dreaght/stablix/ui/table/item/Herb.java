@@ -1,4 +1,9 @@
 package org.dreaght.stablix.ui.table.item;
 
-public class Herb {
+import org.bukkit.inventory.ItemStack;
+
+class Herb extends TableIngredientItem {
+    public Herb(ItemStack itemStack) {
+        super(itemStack);
+    }
 }

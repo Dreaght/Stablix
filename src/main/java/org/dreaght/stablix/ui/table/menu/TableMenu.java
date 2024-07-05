@@ -1,4 +1,6 @@
 package org.dreaght.stablix.ui.table.menu;
 
-public interface TableMenu {
+import org.bukkit.inventory.InventoryHolder;
+
+public interface TableMenu extends InventoryHolder {
 }
