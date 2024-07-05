@@ -1,0 +1,5 @@
+name: Stablix
+version: '${version}'
+main: dev.mega.stablix.Stablix
+api-version: '1.13'
+authors: [Dreaght]
