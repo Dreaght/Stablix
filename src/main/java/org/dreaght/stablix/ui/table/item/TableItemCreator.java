@@ -1,5 +1,7 @@
 package org.dreaght.stablix.ui.table.item;
 
-public interface TableItemCreator {
+import org.dreaght.stablix.event.EventCaller;
+
+public interface TableItemCreator extends EventCaller {
     TableItem createItem();
 }
