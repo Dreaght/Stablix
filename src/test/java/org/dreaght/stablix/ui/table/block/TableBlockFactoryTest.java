@@ -16,8 +16,6 @@ class TableBlockFactoryTest {
                 "boiler"
         );
 
-        assertTrue(blockTypesToCheck.stream().allMatch(blockType -> {
-            return TableItemFactory.getTableItemCreator(blockType).isPresent();
-        }));
+        assertTrue(blockTypesToCheck.stream().allMatch(blockType -> TableItemFactory.getTableItemCreator(blockType).isPresent()));
     }
 }

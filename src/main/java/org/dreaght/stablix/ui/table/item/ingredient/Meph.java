@@ -10,6 +10,6 @@ class Meph extends TableIngredientItem {
 
     @Override
     Ingredient getIngredientType() {
-        return null;
+        return Ingredient.MEPH;
     }
 }

@@ -10,6 +10,6 @@ class Furnace extends TableBlockItem {
 
     @Override
     TableBlockType getTableBlockType() {
-        return null;
+        return TableBlockType.FURNACE;
     }
 }

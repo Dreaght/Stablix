@@ -10,6 +10,6 @@ class Sulfur extends TableIngredientItem {
 
     @Override
     Ingredient getIngredientType() {
-        return null;
+        return Ingredient.SULFUR;
     }
 }

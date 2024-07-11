@@ -10,6 +10,6 @@ class Salt extends TableIngredientItem {
 
     @Override
     Ingredient getIngredientType() {
-        return null;
+        return Ingredient.SALT;
     }
 }

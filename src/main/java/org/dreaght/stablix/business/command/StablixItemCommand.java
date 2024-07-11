@@ -11,12 +11,10 @@ import java.util.Objects;
 import java.util.Optional;
 
 class StablixItemCommand implements ItemCommand {
-
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-
         if (args.length == 3) {
-            if (Objects.equals(args[1], "give")) {
+            if (Objects.equals(args[0], "give")) {
                 return handleGiveArgument(sender, args);
             }
         }
@@ -25,7 +23,7 @@ class StablixItemCommand implements ItemCommand {
     }
 
     private boolean handleGiveArgument(CommandSender commandSender, String[] args) {
-        Player player = Bukkit.getPlayer(args[2]);
+        Player player = Bukkit.getPlayer(args[1]);
 
         if (player != null) {
             Optional<TableItemCreator> tableItemFactory = TableItemFactory.getTableItemCreator(args[2]);

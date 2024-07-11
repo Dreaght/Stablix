@@ -10,6 +10,6 @@ class Boiler extends TableBlockItem {
 
     @Override
     TableBlockType getTableBlockType() {
-        return null;
+        return TableBlockType.BOILER;
     }
 }

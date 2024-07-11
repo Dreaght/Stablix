@@ -9,8 +9,6 @@ import java.util.Arrays;
 import java.util.Optional;
 
 class TableItemFactoryStrategyImpl implements TableItemFactoryStrategy {
-
-    // collapse it if you can ;D
     @Override
     public Optional<TableItemCreator> getTableItemCreator(String itemName) {
         Optional<Ingredient> ingredient = Arrays.stream(Ingredient.values())

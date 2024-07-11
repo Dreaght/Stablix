@@ -10,6 +10,6 @@ class Fuel extends TableIngredientItem {
 
     @Override
     Ingredient getIngredientType() {
-        return null;
+        return Ingredient.FUEL;
     }
 }
