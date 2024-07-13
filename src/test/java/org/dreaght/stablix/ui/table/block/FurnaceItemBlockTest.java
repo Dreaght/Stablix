@@ -1,27 +1,23 @@
 package org.dreaght.stablix.ui.table.block;
 
+import org.dreaght.stablix.business.table.Table;
+import org.dreaght.stablix.ui.table.FurnaceTable;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 
-class BoilerBlockTest {
-    private TableBlock tableBlock;
+class FurnaceItemBlockTest {
+    private Table tableHandler;
 
     @BeforeEach
     void setup() {
-        tableBlock = new BoilerBlock(mock());
+        tableHandler = new FurnaceTable();
     }
 
     @Test
-    void getLocation() {
-        assertNotNull(tableBlock.getLocation());
+    void getMenu() {
+        assertNotNull(tableHandler.getMenu());
     }
-
-    @Test
-    void getItemStack() {
-        assertNotNull(tableBlock.getItemStack());
-    }
-
 }

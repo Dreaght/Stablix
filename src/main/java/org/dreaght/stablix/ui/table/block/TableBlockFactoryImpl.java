@@ -5,13 +5,16 @@ import org.bukkit.Location;
 import org.dreaght.stablix.business.table.TableBlockType;
 import org.dreaght.stablix.event.StablixEvent;
 import org.dreaght.stablix.event.table.TablePlaceEvent;
+import org.dreaght.stablix.ui.table.BoilerTable;
+import org.dreaght.stablix.ui.table.FurnaceTable;
 
 public record TableBlockFactoryImpl(TableBlockType blockType, Location location) implements TableBlockCreator {
+
     @Override
-    public TableBlock createBlock() {
+    public TableHandler createBlock() {
         return switch (blockType) {
-            case FURNACE -> new FurnaceBlock(location);
-            case BOILER -> new BoilerBlock(location);
+            case FURNACE -> new FurnaceBlock(location, new FurnaceTable());
+            case BOILER -> new BoilerBlock(location, new BoilerTable());
         };
     }
 

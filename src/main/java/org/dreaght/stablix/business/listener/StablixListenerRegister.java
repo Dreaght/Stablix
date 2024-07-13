@@ -14,7 +14,9 @@ public class StablixListenerRegister implements ListenerRegister {
 
     private final Plugin plugin;
     private final List<Listener> listeners = new LinkedList<>(List.of(
-
+            new StablixBlockPlaceListener(),
+            new StablixBlockBreakListener(),
+            new StablixBlockClickListener()
     ));
 
     @Override

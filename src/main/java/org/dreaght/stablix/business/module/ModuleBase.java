@@ -1,6 +1,6 @@
 package org.dreaght.stablix.business.module;
 
-interface ModuleBase {
+public interface ModuleBase {
     void enable();
 
     void disable();

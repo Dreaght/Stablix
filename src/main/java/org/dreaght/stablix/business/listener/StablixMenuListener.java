@@ -7,7 +7,5 @@ public class StablixMenuListener implements MenuListener {
     @Override
     public void onItemClickEvent(InventoryClickEvent event) {
         if (!(event.getClickedInventory().getHolder() instanceof TableMenu)) return;
-
-
     }
 }

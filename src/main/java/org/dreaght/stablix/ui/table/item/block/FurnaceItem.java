@@ -3,8 +3,8 @@ package org.dreaght.stablix.ui.table.item.block;
 import org.bukkit.inventory.ItemStack;
 import org.dreaght.stablix.business.table.TableBlockType;
 
-class Furnace extends TableBlockItem {
-    public Furnace(ItemStack itemStack) {
+class FurnaceItem extends TableBlockItem {
+    public FurnaceItem(ItemStack itemStack) {
         super(itemStack);
     }
 

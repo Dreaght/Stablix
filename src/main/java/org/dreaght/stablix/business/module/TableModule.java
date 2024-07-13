@@ -2,14 +2,16 @@ package org.dreaght.stablix.business.module;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
-import org.dreaght.stablix.business.table.Table;
+import org.dreaght.stablix.ui.table.block.TableHandler;
 
 import java.util.Optional;
 
-interface TableModule extends ModuleBase {
-    Optional<Table> getTable(Location location);
+public interface TableModule extends ModuleBase {
+    Optional<TableHandler> getTable(Location location);
 
-    void addTable(Player player, Table table);
+    void addTable(Player player, TableHandler table);
+
+    void removeTable(TableHandler tableHandler);
 
     void addPlayer(Player player);
 

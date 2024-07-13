@@ -12,8 +12,8 @@ public record TableBlockItemFactory(TableBlockType blockType) implements TableIt
     @Override
     public TableItem createItem() {
         return switch (blockType) {
-            case FURNACE -> new Furnace(null);
-            case BOILER -> new Boiler(null);
+            case FURNACE -> new FurnaceItem(null);
+            case BOILER -> new BoilerItem(null);
         };
     }
 

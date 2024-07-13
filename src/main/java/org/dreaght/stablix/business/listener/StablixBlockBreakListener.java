@@ -1,10 +1,13 @@
 package org.dreaght.stablix.business.listener;
 
 import org.bukkit.event.block.BlockBreakEvent;
+import org.dreaght.stablix.Stablix;
 
 public class StablixBlockBreakListener implements BlockBreakListener {
     @Override
     public void onBlockBreak(BlockBreakEvent event) {
-        event.getBlock();
+        Stablix.getApi().removeBlockForPlayer(
+                event.getPlayer().getUniqueId(),
+                event.getBlock().getLocation());
     }
 }

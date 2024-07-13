@@ -16,7 +16,7 @@ import static org.mockito.ArgumentMatchers.shortThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-class TableBlockItemFactoryTest {
+class TableHandlerItemFactoryTest {
     private static Server server = mock(Server.class);
 
     @BeforeAll

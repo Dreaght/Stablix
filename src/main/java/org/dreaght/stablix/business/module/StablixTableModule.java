@@ -2,15 +2,15 @@ package org.dreaght.stablix.business.module;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
-import org.dreaght.stablix.business.table.Table;
+import org.dreaght.stablix.ui.table.block.TableHandler;
 
 import java.util.*;
 
 class StablixTableModule implements TableModule {
-    private final Map<Player, List<Table>> tables = new HashMap<>();
+    private final Map<Player, List<TableHandler>> tables = new HashMap<>();
 
     @Override
-    public Optional<Table> getTable(Location location) {
+    public Optional<TableHandler> getTable(Location location) {
         return tables.values()
                 .stream()
                 .flatMap(Collection::stream)
@@ -19,10 +19,19 @@ class StablixTableModule implements TableModule {
     }
 
     @Override
-    public void addTable(Player player, Table table) {
-        List<Table> playerTables = tables.get(player);
+    public void addTable(Player player, TableHandler table) {
+        List<TableHandler> playerTables = tables.get(player);
         playerTables.add(table);
         tables.put(player, playerTables);
+    }
+
+    @Override
+    public void removeTable(TableHandler tableHandler) {
+        for (Map.Entry<Player, List<TableHandler>> entry : tables.entrySet()) {
+            List<TableHandler> tableHandlers = entry.getValue();
+            tableHandlers.removeIf(table -> table.equals(tableHandler));
+            if (tableHandlers.isEmpty()) tables.remove(entry.getKey());
+        }
     }
 
     @Override
