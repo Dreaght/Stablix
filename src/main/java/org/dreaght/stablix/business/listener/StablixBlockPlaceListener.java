@@ -1,16 +1,26 @@
 package org.dreaght.stablix.business.listener;
 
-import org.bukkit.Location;
-import org.bukkit.block.Block;
 import org.bukkit.event.block.BlockPlaceEvent;
+import org.dreaght.stablix.business.module.StablixModuleCore;
+import org.dreaght.stablix.internal.material.MaterialDataParser;
+import org.dreaght.stablix.ui.table.block.TableBlock;
+import org.dreaght.stablix.ui.table.block.TableBlockCreator;
 import org.dreaght.stablix.ui.table.block.TableBlockFactory;
+
+import java.util.Optional;
 
 public class StablixBlockPlaceListener implements BlockPlaceListener {
     @Override
     public void onBlockPlace(BlockPlaceEvent event) {
-        Block tableBlock = event.getBlock();
-        Location location = event.getBlockPlaced().getLocation();
+        Optional<TableBlockCreator> optionalCreator =
+                TableBlockFactory.getTableBlockCreator(
+                MaterialDataParser.getTable(event.getItemInHand().getItemMeta()),
+                event.getBlockPlaced().getLocation());
 
-        TableBlockFactory.getTableBlockCreator("");
+        if (optionalCreator.isEmpty()) return;
+        TableBlockCreator creator = optionalCreator.get();
+
+        TableBlock table = creator.createBlock();
+
     }
 }

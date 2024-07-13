@@ -5,9 +5,9 @@ import org.dreaght.stablix.ui.table.block.TableBlock;
 
 public final class MaterialDataParser {
 
-    private final MaterialDataParserStrategy materialDataParserStrategy;
+    private static final MaterialDataParserStrategy materialDataParserStrategy = new MaterialParserStrategyImpl();
 
-    public TableBlock getTable(ItemMeta itemMeta) {
-        return materialDataParserStrategy.getTable(itemMeta);
+    public static String getTable(ItemMeta itemMeta) {
+        return materialDataParserStrategy.getTableName(itemMeta);
     }
 }

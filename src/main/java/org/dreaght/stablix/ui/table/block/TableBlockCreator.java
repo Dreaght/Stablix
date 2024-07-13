@@ -1,5 +1,7 @@
 package org.dreaght.stablix.ui.table.block;
 
-public interface TableBlockCreator {
+import org.dreaght.stablix.event.EventCaller;
+
+public interface TableBlockCreator extends EventCaller {
     TableBlock createBlock();
 }
