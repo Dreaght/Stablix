@@ -4,7 +4,7 @@ import org.bukkit.inventory.ItemStack;
 import org.dreaght.stablix.event.ItemCreationEvent;
 import org.dreaght.stablix.event.StablixEvent;
 
-public class TableItemCreateEvent extends StablixEvent implements TableEvent, ItemCreationEvent {
+public class TableItemCreateEvent extends StablixEvent implements ItemCreationEvent {
     public TableItemCreateEvent(Object[] args) {
         super(args);
     }
