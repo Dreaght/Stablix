@@ -1,17 +1,17 @@
 # Stablix development guide.
 
-Три ответвления:
+Three roots:
 * `dev.mega.stablix`
 * `org.dreaght.stablix`
 * `ru.legeu.stablix`
 
-Работаем над `org.dreaght.stablix`!
+Working at `org.dreaght.stablix`!
 
-Публичные пакеты:
-* `api` - Апи, к которому обращаются другие плагины.
-* `event` - Ивенты, за которые цепляются другие плагины либо внутренний код сервера.
+Public packages:
+* `api` - Plugin API.
+* `event` - Events for external and internal usage.
 
 Приватные пакеты:
-* `business` - Вся безнес (механика) логика сервера.
-* `internal` - Вспомогательные утилиты/код используемый сервером.
-* `ui` - То с чем взаимодействует игрок создается здесь и вызывается бизнесом (`business` пакет).
+* `business` - Business mechanic of plugin.
+* `internal` - Additional utils (internal use only).
+* `ui` - Player interact stuff (usually using by `business`).
