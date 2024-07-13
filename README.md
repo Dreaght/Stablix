@@ -11,7 +11,7 @@ Public packages:
 * `api` - Plugin API.
 * `event` - Events for external and internal usage.
 
-Приватные пакеты:
+Private packages:
 * `business` - Business mechanic of plugin.
 * `internal` - Additional utils (internal use only).
 * `ui` - Player interact stuff (usually using by `business`).
